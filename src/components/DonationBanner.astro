@@ -1,0 +1,54 @@
+---
+---
+
+<div id="donation-banner" class="fixed bottom-0 left-0 right-0 bg-primary-600 text-white py-3 px-4 shadow-lg z-40 transform translate-y-full transition-transform duration-300">
+  <div class="max-w-7xl mx-auto flex items-center justify-between">
+    <div class="flex items-center space-x-4">
+      <svg class="w-6 h-6 text-primary-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+      </svg>
+      <span class="text-sm font-medium">Help us build stronger communities through technology</span>
+    </div>
+    <div class="flex items-center space-x-3">
+      <a 
+        href="/donate" 
+        class="bg-white text-primary-600 px-4 py-2 rounded-lg text-sm font-semibold hover:bg-gray-100 transition-colors duration-200"
+      >
+        Donate Now
+      </a>
+      <button 
+        id="close-banner" 
+        class="text-primary-200 hover:text-white transition-colors duration-200"
+        aria-label="Close donation banner"
+      >
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const banner = document.getElementById('donation-banner');
+  const closeButton = document.getElementById('close-banner');
+  
+  // Show banner after 3 seconds if user hasn't closed it before
+  if (!localStorage.getItem('donation-banner-closed')) {
+    setTimeout(() => {
+      if (banner) {
+        banner.classList.remove('translate-y-full');
+      }
+    }, 3000);
+  }
+  
+  // Close banner functionality
+  if (closeButton && banner) {
+    closeButton.addEventListener('click', function() {
+      banner.classList.add('translate-y-full');
+      localStorage.setItem('donation-banner-closed', 'true');
+    });
+  }
+});
+</script>

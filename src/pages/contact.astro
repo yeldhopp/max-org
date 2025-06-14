@@ -1,0 +1,389 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import DonationBanner from '../components/DonationBanner.astro';
+---
+
+<Layout title="Contact Us - Maxsys International" description="Get in touch with Maxsys International. Whether you need tech support, want to join our network, or have questions about our community-focused approach.">
+  <Header />
+  <main>
+    <!-- Hero Section -->
+    <section class="py-20 bg-gradient-to-br from-primary-50 to-secondary-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
+          Get <span class="text-primary-600">In Touch</span>
+        </h1>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Whether you need tech support, want to join our network, or have questions about our community-focused approach, 
+          we're here to help connect you with the right resources.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Options -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+          <!-- General Contact -->
+          <div class="bg-primary-50 p-8 rounded-2xl text-center">
+            <div class="w-16 h-16 bg-primary-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">General Inquiries</h3>
+            <p class="text-gray-600 mb-6">
+              Questions about our mission, partnerships, or how Maxsys can help your community.
+            </p>
+            <a 
+              href="mailto:info@maxsys.org" 
+              class="bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors duration-200 inline-block"
+            >
+              info@maxsys.org
+            </a>
+          </div>
+
+          <!-- Tech Support -->
+          <div class="bg-secondary-50 p-8 rounded-2xl text-center">
+            <div class="w-16 h-16 bg-secondary-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">Need Tech Help?</h3>
+            <p class="text-gray-600 mb-6">
+              Post your tech challenge and connect with verified Tech Stewards in your area.
+            </p>
+            <a 
+              href="https://hub.maxsys.org" 
+              class="bg-secondary-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-secondary-700 transition-colors duration-200 inline-block"
+            >
+              Post Your Need
+            </a>
+          </div>
+
+          <!-- Join Network -->
+          <div class="bg-accent-50 p-8 rounded-2xl text-center">
+            <div class="w-16 h-16 bg-accent-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">Join Our Network</h3>
+            <p class="text-gray-600 mb-6">
+              Become a Tech Steward or Tech Hub partner and start making a difference in your community.
+            </p>
+            <a 
+              href="/talent" 
+              class="bg-accent-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-accent-700 transition-colors duration-200 inline-block"
+            >
+              Get Started
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <div>
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Send Us a Message</h2>
+            <form class="space-y-6">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label for="first-name" class="block text-sm font-medium text-gray-700 mb-2">First Name</label>
+                  <input 
+                    type="text" 
+                    id="first-name" 
+                    name="first-name"
+                    required
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                  />
+                </div>
+                <div>
+                  <label for="last-name" class="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
+                  <input 
+                    type="text" 
+                    id="last-name" 
+                    name="last-name"
+                    required
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                  />
+                </div>
+              </div>
+              
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email"
+                  required
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                />
+              </div>
+              
+              <div>
+                <label for="organization" class="block text-sm font-medium text-gray-700 mb-2">Organization (Optional)</label>
+                <input 
+                  type="text" 
+                  id="organization" 
+                  name="organization"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                />
+              </div>
+              
+              <div>
+                <label for="inquiry-type" class="block text-sm font-medium text-gray-700 mb-2">Type of Inquiry</label>
+                <select 
+                  id="inquiry-type" 
+                  name="inquiry-type"
+                  required
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                >
+                  <option value="">Select an option</option>
+                  <option value="general">General Information</option>
+                  <option value="tech-support">Need Tech Support</option>
+                  <option value="join-steward">Become a Tech Steward</option>
+                  <option value="join-partner">Become a Tech Hub Partner</option>
+                  <option value="corporate">Corporate Partnership</option>
+                  <option value="media">Media Inquiry</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              
+              <div>
+                <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                <textarea 
+                  id="message" 
+                  name="message" 
+                  rows="6"
+                  required
+                  placeholder="Tell us about your needs, questions, or how you'd like to get involved..."
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                ></textarea>
+              </div>
+              
+              <button 
+                type="submit" 
+                class="w-full bg-primary-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary-700 transition-colors duration-200"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+
+          <!-- Contact Info & FAQ -->
+          <div>
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Get Involved</h2>
+            <div class="space-y-8">
+              <div>
+                <h3 class="text-lg font-semibold text-gray-900 mb-3">For Organizations Needing Tech Help</h3>
+                <p class="text-gray-600 mb-4">
+                  Post your tech challenge on our platform and connect with verified Tech Stewards in your area. 
+                  From website development to cybersecurity, our community-based approach ensures you get reliable, 
+                  affordable support from people who understand your local needs.
+                </p>
+                <a 
+                  href="https://hub.maxsys.org" 
+                  class="text-primary-600 font-semibold hover:text-primary-700 transition-colors duration-200"
+                >
+                  Post Your Tech Need →
+                </a>
+              </div>
+
+              <div>
+                <h3 class="text-lg font-semibold text-gray-900 mb-3">For Tech Professionals</h3>
+                <p class="text-gray-600 mb-4">
+                  Join our network of Tech Stewards and use your skills to make a real difference in your community 
+                  while earning fair wages. We provide the platform, support, and connections you need to build 
+                  meaningful client relationships locally.
+                </p>
+                <a 
+                  href="/talent" 
+                  class="text-secondary-600 font-semibold hover:text-secondary-700 transition-colors duration-200"
+                >
+                  Become a Tech Steward →
+                </a>
+              </div>
+
+              <div>
+                <h3 class="text-lg font-semibold text-gray-900 mb-3">For Community Leaders</h3>
+                <p class="text-gray-600 mb-4">
+                  Interested in bringing a Tech Hub to your community? Our partnership model provides the training, 
+                  tools, and support you need to create sustainable local employment while serving your area's 
+                  technology needs.
+                </p>
+                <a 
+                  href="/partners" 
+                  class="text-accent-600 font-semibold hover:text-accent-700 transition-colors duration-200"
+                >
+                  Explore Partnership →
+                </a>
+              </div>
+
+              <div class="bg-gray-50 p-6 rounded-xl">
+                <h3 class="text-lg font-semibold text-gray-900 mb-3">Quick Response Times</h3>
+                <ul class="text-gray-600 space-y-2 text-sm">
+                  <li>• General inquiries: Within 24 hours</li>
+                  <li>• Tech support requests: Same day</li>
+                  <li>• Partnership applications: Within 48 hours</li>
+                  <li>• Media requests: Within 4 hours</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+          <p class="text-xl text-gray-600">
+            Common questions about our community-focused approach to technology support.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="space-y-6">
+            <div class="bg-white p-6 rounded-xl shadow-sm">
+              <h3 class="font-semibold text-gray-900 mb-3">How is Maxsys different from other tech support services?</h3>
+              <p class="text-gray-600 text-sm">
+                We focus on local, community-based relationships rather than remote support. Our Tech Stewards live in your area, 
+                understand your local context, and build ongoing relationships with the organizations they serve.
+              </p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-sm">
+              <h3 class="font-semibold text-gray-900 mb-3">What types of organizations do you serve?</h3>
+              <p class="text-gray-600 text-sm">
+                We primarily serve nonprofits, community organizations, churches, schools, and small local businesses. 
+                Our mission is to ensure these vital community institutions have access to reliable, affordable tech support.
+              </p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-sm">
+              <h3 class="font-semibold text-gray-900 mb-3">How do you ensure quality and reliability?</h3>
+              <p class="text-gray-600 text-sm">
+                All Tech Stewards go through background checks, skills verification, and ongoing training. 
+                Local Tech Hub partners manage quality assurance and maintain relationships with both clients and service providers.
+              </p>
+            </div>
+          </div>
+
+          <div class="space-y-6">
+            <div class="bg-white p-6 rounded-xl shadow-sm">
+              <h3 class="font-semibold text-gray-900 mb-3">What if there's no Tech Hub in my area yet?</h3>
+              <p class="text-gray-600 text-sm">
+                You can still post your tech needs on our platform, and we'll work to connect you with nearby Tech Stewards. 
+                We're also actively seeking partners to establish new Tech Hubs in underserved communities.
+              </p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-sm">
+              <h3 class="font-semibold text-gray-900 mb-3">How much does it cost to use Maxsys services?</h3>
+              <p class="text-gray-600 text-sm">
+                Our rates are typically 20-40% lower than traditional remote services because there are no travel costs or overhead. 
+                We also offer subsidized rates for qualifying nonprofits through our donor-supported programs.
+              </p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-sm">
+              <h3 class="font-semibold text-gray-900 mb-3">Can I volunteer my time instead of donating money?</h3>
+              <p class="text-gray-600 text-sm">
+                Absolutely! We welcome volunteers for tech support, training, community outreach, marketing, and administrative tasks. 
+                Contact us to discuss how your skills can contribute to our mission.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Office Locations -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">Our Network</h2>
+          <p class="text-xl text-gray-600">
+            While we operate virtually, our Tech Hubs are embedded in communities across the country.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="text-center">
+            <div class="w-16 h-16 bg-primary-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-900 mb-2">Headquarters</h3>
+            <p class="text-gray-600 text-sm">
+              Virtual Operations<br>
+              Serving communities nationwide<br>
+              <a href="mailto:info@maxsys.org" class="text-primary-600 hover:text-primary-700">info@maxsys.org</a>
+            </p>
+          </div>
+
+          <div class="text-center">
+            <div class="w-16 h-16 bg-secondary-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-900 mb-2">Active Tech Hubs</h3>
+            <p class="text-gray-600 text-sm">
+              50+ communities served<br>
+              500+ verified Tech Stewards<br>
+              <a href="/talent" class="text-secondary-600 hover:text-secondary-700">Find local talent →</a>
+            </p>
+          </div>
+
+          <div class="text-center">
+            <div class="w-16 h-16 bg-accent-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-900 mb-2">Expanding Network</h3>
+            <p class="text-gray-600 text-sm">
+              New hubs launching monthly<br>
+              Growing nationwide presence<br>
+              <a href="/partners" class="text-accent-600 hover:text-accent-700">Bring Maxsys to your area →</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+  <DonationBanner />
+</Layout>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const form = document.querySelector('form');
+  
+  if (form) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Get form data
+      const formData = new FormData(form);
+      const data = Object.fromEntries(formData);
+      
+      console.log('Form submission:', data);
+      
+      // In production, this would send to your backend
+      alert('Thank you for your message! We\'ll get back to you within 24 hours.');
+      
+      // Reset form
+      form.reset();
+    });
+  }
+});
+</script>

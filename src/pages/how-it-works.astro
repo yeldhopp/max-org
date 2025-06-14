@@ -1,0 +1,400 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import DonationBanner from '../components/DonationBanner.astro';
+---
+
+<Layout title="How It Works - Maxsys International" description="Learn how Maxsys connects skilled tech professionals with local communities through our network of Tech Hubs and verified Tech Stewards.">
+  <Header />
+  <main>
+    <!-- Hero Section -->
+    <section class="py-20 bg-gradient-to-br from-primary-50 to-secondary-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
+          How <span class="text-primary-600">It Works</span>
+        </h1>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Simple, transparent connections between communities that need tech help and skilled professionals who care about making a difference.
+        </p>
+      </div>
+    </section>
+
+    <!-- Process Overview -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">The Platform is Straightforward</h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Organizations post their tech needs, verified Tech Stewards respond locally, work gets done right. 
+            No complicated algorithms, no venture capital nonsense, just skilled people helping their neighbors.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div class="text-center">
+            <div class="w-16 h-16 bg-primary-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+              <span class="text-white text-2xl font-bold">1</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">Post Your Need</h3>
+            <p class="text-gray-600">
+              Organizations describe their tech challenge through our simple platform. Whether it's website development, 
+              network security, or data recovery, local Tech Stewards see what their community needs.
+            </p>
+          </div>
+          
+          <div class="text-center">
+            <div class="w-16 h-16 bg-secondary-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+              <span class="text-white text-2xl font-bold">2</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">Connect Locally</h3>
+            <p class="text-gray-600">
+              Verified Tech Stewards in your area respond with their qualifications and approach. You choose who to work with 
+              based on their profile, reviews, and local reputation.
+            </p>
+          </div>
+          
+          <div class="text-center">
+            <div class="w-16 h-16 bg-accent-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+              <span class="text-white text-2xl font-bold">3</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">Get It Done Right</h3>
+            <p class="text-gray-600">
+              Work happens locally with clear communication and fair payment. The platform handles logistics while you focus 
+              on building relationships that strengthen your community.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- For Different Groups -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">How It Works For You</h2>
+        </div>
+
+        <!-- Tabs -->
+        <div class="flex flex-wrap justify-center gap-4 mb-12">
+          <button class="tab-button active bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors duration-200" data-tab="freelancers">
+            For Tech Professionals
+          </button>
+          <button class="tab-button bg-white text-primary-600 border-2 border-primary-600 px-6 py-3 rounded-lg font-semibold hover:bg-primary-50 transition-colors duration-200" data-tab="nonprofits">
+            For Organizations
+          </button>
+          <button class="tab-button bg-white text-primary-600 border-2 border-primary-600 px-6 py-3 rounded-lg font-semibold hover:bg-primary-50 transition-colors duration-200" data-tab="donors">
+            For Supporters
+          </button>
+          <button class="tab-button bg-white text-primary-600 border-2 border-primary-600 px-6 py-3 rounded-lg font-semibold hover:bg-primary-50 transition-colors duration-200" data-tab="hubs">
+            For Tech Hubs
+          </button>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="freelancers" class="tab-content active">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <h3 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-6">For Tech Professionals</h3>
+              <div class="space-y-6">
+                <div class="flex items-start space-x-4">
+                  <div class="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Apply to Become a Tech Steward</h4>
+                    <p class="text-gray-600">Complete our verification process including background check, skills assessment, and community references.</p>
+                  </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                  <div class="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Browse Local Opportunities</h4>
+                    <p class="text-gray-600">See tech needs from nonprofits, community organizations, and neighbors in your area. Choose projects that match your skills and schedule.</p>
+                  </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                  <div class="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Earn Fair Wages While Making Impact</h4>
+                    <p class="text-gray-600">Tech Stewards earn $25-75/hour depending on skills and project complexity. Build your local reputation and steady income stream.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-8">
+                <a href="https://hub.maxsys.org" class="bg-primary-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors duration-200 inline-block">
+                  Apply Now
+                </a>
+              </div>
+            </div>
+            <div>
+              <img 
+                src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop"
+                alt="Tech professional helping community"
+                class="rounded-2xl shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div id="nonprofits" class="tab-content hidden">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <img 
+                src="https://images.pexels.com/photos/6646918/pexels-photo-6646918.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop"
+                alt="Nonprofit getting tech help"
+                class="rounded-2xl shadow-lg"
+              />
+            </div>
+            <div>
+              <h3 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-6">For Organizations</h3>
+              <div class="space-y-6">
+                <div class="flex items-start space-x-4">
+                  <div class="w-8 h-8 bg-secondary-600 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Post Your Tech Challenge</h4>
+                    <p class="text-gray-600">Describe what you need help with—website development, network security, data recovery, or ongoing IT support.</p>
+                  </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                  <div class="w-8 h-8 bg-secondary-600 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Connect with Local Experts</h4>
+                    <p class="text-gray-600">Verified Tech Stewards in your community respond with their approach and qualifications. Choose who you want to work with.</p>
+                  </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                  <div class="w-8 h-8 bg-secondary-600 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Get Affordable, Reliable Support</h4>
+                    <p class="text-gray-600">Pay 20-40% less than remote services while getting face-to-face support from someone who understands your community's needs.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-8">
+                <a href="https://hub.maxsys.org" class="bg-secondary-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-secondary-700 transition-colors duration-200 inline-block">
+                  Post Your Need
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="donors" class="tab-content hidden">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <h3 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-6">For Supporters</h3>
+              <div class="space-y-6">
+                <div class="flex items-start space-x-4">
+                  <div class="w-8 h-8 bg-accent-600 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Fund Community Tech Infrastructure</h4>
+                    <p class="text-gray-600">Your donations help establish new Tech Hubs in underserved communities and provide subsidized services to nonprofits.</p>
+                  </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                  <div class="w-8 h-8 bg-accent-600 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Support Local Economic Development</h4>
+                    <p class="text-gray-600">Every dollar donated creates multiplied economic impact as Tech Stewards spend their earnings locally and build sustainable careers.</p>
+                  </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                  <div class="w-8 h-8 bg-accent-600 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">See Direct Impact</h4>
+                    <p class="text-gray-600">Receive regular updates on how your contributions are strengthening communities and creating opportunities for skilled professionals.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-8">
+                <a href="/donate" class="bg-accent-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-accent-700 transition-colors duration-200 inline-block">
+                  Make a Donation
+                </a>
+              </div>
+            </div>
+            <div>
+              <img 
+                src="https://images.pexels.com/photos/6646971/pexels-photo-6646971.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop"
+                alt="Community support and donation impact"
+                class="rounded-2xl shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div id="hubs" class="tab-content hidden">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <img 
+                src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop"
+                alt="Tech hub collaboration"
+                class="rounded-2xl shadow-lg"
+              />
+            </div>
+            <div>
+              <h3 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-6">For Tech Hubs</h3>
+              <div class="space-y-6">
+                <div class="flex items-start space-x-4">
+                  <div class="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Operate Semi-Independently</h4>
+                    <p class="text-gray-600">Tech Hubs function like franchise operations but with a mission focus. You get training, business support, and HR tools to manage your team.</p>
+                  </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                  <div class="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Build Sustainable Income</h4>
+                    <p class="text-gray-600">Hub managers earn $50,000-100,000 annually while managing teams of 10-25 local Tech Stewards. Create meaningful employment in your community.</p>
+                  </div>
+                </div>
+                <div class="flex items-start space-x-4">
+                  <div class="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Access Network Resources</h4>
+                    <p class="text-gray-600">When big issues hit, call in specialists from other hubs. It's distributed expertise with local accountability.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-8">
+                <a href="https://hrm.maxsys.org" class="bg-primary-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors duration-200 inline-block">
+                  Become a Partner
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Network Effect -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">The Network Effect</h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            When big issues hit—like a ransomware attack on a school district—the network kicks in. 
+            A hub in North Carolina can call in specialists from Virginia or Tennessee.
+          </p>
+        </div>
+
+        <div class="bg-gray-50 rounded-2xl p-8">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="text-center">
+              <div class="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9"></path>
+                </svg>
+              </div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-2">Distributed Expertise</h3>
+              <p class="text-gray-600 text-sm">Access specialized skills from across the network when local challenges exceed individual hub capabilities.</p>
+            </div>
+            
+            <div class="text-center">
+              <div class="w-16 h-16 bg-secondary-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                </svg>
+              </div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-2">Local Accountability</h3>
+              <p class="text-gray-600 text-sm">All work is managed by local hubs who understand community needs and maintain ongoing relationships.</p>
+            </div>
+            
+            <div class="text-center">
+              <div class="w-16 h-16 bg-accent-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                </svg>
+              </div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-2">Rapid Response</h3>
+              <p class="text-gray-600 text-sm">Crisis situations get immediate attention from the nearest available experts, not a distant call center.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+  <DonationBanner />
+</Layout>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const tabButtons = document.querySelectorAll('.tab-button');
+  const tabContents = document.querySelectorAll('.tab-content');
+
+  tabButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const targetTab = this.getAttribute('data-tab');
+      
+      // Remove active classes
+      tabButtons.forEach(btn => {
+        btn.classList.remove('active', 'bg-primary-600', 'text-white');
+        btn.classList.add('bg-white', 'text-primary-600', 'border-2', 'border-primary-600');
+      });
+      
+      tabContents.forEach(content => {
+        content.classList.remove('active');
+        content.classList.add('hidden');
+      });
+      
+      // Add active classes
+      this.classList.add('active', 'bg-primary-600', 'text-white');
+      this.classList.remove('bg-white', 'text-primary-600', 'border-2', 'border-primary-600');
+      
+      const targetContent = document.getElementById(targetTab);
+      if (targetContent) {
+        targetContent.classList.add('active');
+        targetContent.classList.remove('hidden');
+      }
+    });
+  });
+});
+</script>

@@ -1,0 +1,359 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import DonationBanner from '../components/DonationBanner.astro';
+---
+
+<Layout title="Community Stories & Updates - Maxsys International" description="Read success stories, case studies, and updates from our network of Tech Hubs and the communities they serve.">
+  <Header />
+  <main>
+    <!-- Hero Section -->
+    <section class="py-20 bg-gradient-to-br from-primary-50 to-secondary-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
+          Community <span class="text-primary-600">Stories</span>
+        </h1>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Real stories from real communities. See how local tech support is making a difference 
+          in nonprofits, small businesses, and neighborhoods across the country.
+        </p>
+      </div>
+    </section>
+
+    <!-- Featured Story -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-gradient-to-r from-primary-600 to-secondary-600 rounded-3xl overflow-hidden">
+          <div class="grid grid-cols-1 lg:grid-cols-2">
+            <div class="p-12 text-white">
+              <div class="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-semibold mb-4 inline-block">
+                Featured Story
+              </div>
+              <h2 class="text-3xl font-bold mb-6">
+                How Charlotte's Animal Shelter Doubled Adoptions with Local Tech Support
+              </h2>
+              <p class="text-primary-100 mb-6">
+                When the Charlotte Animal Shelter's website crashed during their biggest adoption event of the year, 
+                local Tech Steward Marcus Johnson didn't just fix the problem—he rebuilt their entire digital presence 
+                and helped them reach more families than ever before.
+              </p>
+              <div class="flex items-center space-x-4 mb-6">
+                <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
+                  <span class="text-white font-semibold">MJ</span>
+                </div>
+                <div>
+                  <div class="font-semibold">Marcus Johnson</div>
+                  <div class="text-primary-200 text-sm">Tech Steward, Charlotte NC</div>
+                </div>
+              </div>
+              <a 
+                href="#" 
+                class="bg-white text-primary-600 px-6 py-3 rounded-lg font-semibold hover:bg-primary-50 transition-colors duration-200 inline-block"
+              >
+                Read Full Story
+              </a>
+            </div>
+            <div class="relative">
+              <img 
+                src="https://images.pexels.com/photos/6131071/pexels-photo-6131071.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop"
+                alt="Animal shelter success story"
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">Browse by Category</h2>
+          <div class="flex flex-wrap justify-center gap-4">
+            <button class="category-filter active bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors duration-200" data-category="all">
+              All Stories
+            </button>
+            <button class="category-filter bg-white text-gray-700 border border-gray-300 px-6 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors duration-200" data-category="success-stories">
+              Success Stories
+            </button>
+            <button class="category-filter bg-white text-gray-700 border border-gray-300 px-6 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors duration-200" data-category="case-studies">
+              Case Studies
+            </button>
+            <button class="category-filter bg-white text-gray-700 border border-gray-300 px-6 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors duration-200" data-category="community-impact">
+              Community Impact
+            </button>
+            <button class="category-filter bg-white text-gray-700 border border-gray-300 px-6 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors duration-200" data-category="tech-steward-spotlight">
+              Tech Steward Spotlight
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Posts Grid -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="blog-posts">
+          <!-- Success Story -->
+          <article class="blog-post bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow duration-200" data-category="success-stories">
+            <img 
+              src="https://images.pexels.com/photos/5256816/pexels-photo-5256816.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+              alt="Church livestream success"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-3">
+                <span class="bg-secondary-100 text-secondary-800 px-3 py-1 rounded-full text-xs font-semibold">Success Story</span>
+                <span class="text-gray-500 text-sm">Dec 15, 2024</span>
+              </div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-3">
+                Rural Church Reaches Global Audience Through Local Tech Partnership
+              </h3>
+              <p class="text-gray-600 text-sm mb-4">
+                When St. Mark's Community Church needed to livestream services during the pandemic, 
+                Tech Steward Sarah Rodriguez didn't just set up cameras—she helped them build a digital ministry 
+                that now reaches families across three states.
+              </p>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                  <div class="w-8 h-8 bg-secondary-500 rounded-full flex items-center justify-center">
+                    <span class="text-white text-xs font-semibold">SR</span>
+                  </div>
+                  <span class="text-gray-600 text-sm">Sarah Rodriguez</span>
+                </div>
+                <a href="#" class="text-secondary-600 font-semibold text-sm hover:text-secondary-700">Read More →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case Study -->
+          <article class="blog-post bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow duration-200" data-category="case-studies">
+            <img 
+              src="https://images.pexels.com/photos/5668858/pexels-photo-5668858.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+              alt="Nonprofit cybersecurity case study"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-3">
+                <span class="bg-accent-100 text-accent-800 px-3 py-1 rounded-full text-xs font-semibold">Case Study</span>
+                <span class="text-gray-500 text-sm">Dec 12, 2024</span>
+              </div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-3">
+                How We Saved a Food Bank from Ransomware Attack
+              </h3>
+              <p class="text-gray-600 text-sm mb-4">
+                When the Metro Food Bank fell victim to ransomware, our network response team mobilized within hours. 
+                Here's how local coordination and distributed expertise prevented a community disaster.
+              </p>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                  <div class="w-8 h-8 bg-accent-500 rounded-full flex items-center justify-center">
+                    <span class="text-white text-xs font-semibold">RT</span>
+                  </div>
+                  <span class="text-gray-600 text-sm">Response Team</span>
+                </div>
+                <a href="#" class="text-accent-600 font-semibold text-sm hover:text-accent-700">Read More →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Community Impact -->
+          <article class="blog-post bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow duration-200" data-category="community-impact">
+            <img 
+              src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+              alt="Community tech training"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-3">
+                <span class="bg-primary-100 text-primary-800 px-3 py-1 rounded-full text-xs font-semibold">Community Impact</span>
+                <span class="text-gray-500 text-sm">Dec 10, 2024</span>
+              </div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-3">
+                Austin Tech Hub Creates 25 Local Jobs in First Year
+              </h3>
+              <p class="text-gray-600 text-sm mb-4">
+                One year after launch, the Austin Tech Hub has created 25 sustainable tech jobs, 
+                served 150+ local organizations, and generated over $400,000 in local economic activity. 
+                Here's how they did it.
+              </p>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                  <div class="w-8 h-8 bg-primary-500 rounded-full flex items-center justify-center">
+                    <span class="text-white text-xs font-semibold">MG</span>
+                  </div>
+                  <span class="text-gray-600 text-sm">Maria Gonzalez</span>
+                </div>
+                <a href="#" class="text-primary-600 font-semibold text-sm hover:text-primary-700">Read More →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Tech Steward Spotlight -->
+          <article class="blog-post bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow duration-200" data-category="tech-steward-spotlight">
+            <img 
+              src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+              alt="Tech steward helping senior"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-3">
+                <span class="bg-secondary-100 text-secondary-800 px-3 py-1 rounded-full text-xs font-semibold">Tech Steward Spotlight</span>
+                <span class="text-gray-500 text-sm">Dec 8, 2024</span>
+              </div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-3">
+                Meet David Lee: The Neighborhood Tech Guru Who Makes Computers Simple
+              </h3>
+              <p class="text-gray-600 text-sm mb-4">
+                From fixing crashed computers to teaching seniors about online safety, 
+                David Lee has become the go-to tech person for his entire neighborhood. 
+                Learn about his journey from corporate IT to community service.
+              </p>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                  <div class="w-8 h-8 bg-secondary-500 rounded-full flex items-center justify-center">
+                    <span class="text-white text-xs font-semibold">DL</span>
+                  </div>
+                  <span class="text-gray-600 text-sm">David Lee</span>
+                </div>
+                <a href="#" class="text-secondary-600 font-semibold text-sm hover:text-secondary-700">Read More →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Success Story -->
+          <article class="blog-post bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow duration-200" data-category="success-stories">
+            <img 
+              src="https://images.pexels.com/photos/6646918/pexels-photo-6646918.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+              alt="Small business website success"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-3">
+                <span class="bg-secondary-100 text-secondary-800 px-3 py-1 rounded-full text-xs font-semibold">Success Story</span>
+                <span class="text-gray-500 text-sm">Dec 5, 2024</span>
+              </div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-3">
+                Local Bakery Triples Online Orders with Community Tech Support
+              </h3>
+              <p class="text-gray-600 text-sm mb-4">
+                Sweet Dreams Bakery was struggling to compete with chain stores until Tech Steward Amy Kim 
+                helped them build an online ordering system that showcased their artisanal approach. 
+                Now they're busier than ever.
+              </p>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                  <div class="w-8 h-8 bg-secondary-500 rounded-full flex items-center justify-center">
+                    <span class="text-white text-xs font-semibold">AK</span>
+                  </div>
+                  <span class="text-gray-600 text-sm">Amy Kim</span>
+                </div>
+                <a href="#" class="text-secondary-600 font-semibold text-sm hover:text-secondary-700">Read More →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case Study -->
+          <article class="blog-post bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow duration-200" data-category="case-studies">
+            <img 
+              src="https://images.pexels.com/photos/3184160/pexels-photo-3184160.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+              alt="School district network upgrade"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-3">
+                <span class="bg-accent-100 text-accent-800 px-3 py-1 rounded-full text-xs font-semibold">Case Study</span>
+                <span class="text-gray-500 text-sm">Dec 3, 2024</span>
+              </div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-3">
+                Rural School District Gets Enterprise-Level Network for 60% Less
+              </h3>
+              <p class="text-gray-600 text-sm mb-4">
+                When Riverside School District needed a complete network overhaul, 
+                our coordinated team approach delivered enterprise-level infrastructure 
+                at a fraction of the cost of traditional vendors.
+              </p>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                  <div class="w-8 h-8 bg-accent-500 rounded-full flex items-center justify-center">
+                    <span class="text-white text-xs font-semibold">JT</span>
+                  </div>
+                  <span class="text-gray-600 text-sm">James Thompson</span>
+                </div>
+                <a href="#" class="text-accent-600 font-semibold text-sm hover:text-accent-700">Read More →</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Load More -->
+        <div class="text-center mt-12">
+          <button class="bg-primary-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors duration-200">
+            Load More Stories
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="py-20 bg-gradient-to-r from-primary-600 to-secondary-600 text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl lg:text-4xl font-bold mb-6">Stay Updated</h2>
+        <p class="text-xl text-primary-100 max-w-2xl mx-auto mb-8">
+          Get the latest community stories, case studies, and updates from our network of Tech Hubs delivered to your inbox.
+        </p>
+        
+        <div class="max-w-md mx-auto">
+          <div class="flex space-x-4">
+            <input 
+              type="email" 
+              placeholder="Enter your email address"
+              class="flex-1 px-4 py-3 rounded-lg text-gray-900 focus:ring-2 focus:ring-white focus:outline-none"
+            />
+            <button class="bg-white text-primary-600 px-6 py-3 rounded-lg font-semibold hover:bg-primary-50 transition-colors duration-200">
+              Subscribe
+            </button>
+          </div>
+          <p class="text-primary-200 text-sm mt-3">
+            No spam, unsubscribe anytime. We respect your privacy.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+  <DonationBanner />
+</Layout>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const categoryButtons = document.querySelectorAll('.category-filter');
+  const blogPosts = document.querySelectorAll('.blog-post');
+  
+  categoryButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const category = this.getAttribute('data-category');
+      
+      // Update active button
+      categoryButtons.forEach(btn => {
+        btn.classList.remove('active', 'bg-primary-600', 'text-white');
+        btn.classList.add('bg-white', 'text-gray-700', 'border', 'border-gray-300');
+      });
+      
+      this.classList.add('active', 'bg-primary-600', 'text-white');
+      this.classList.remove('bg-white', 'text-gray-700', 'border', 'border-gray-300');
+      
+      // Filter posts
+      blogPosts.forEach(post => {
+        if (category === 'all' || post.getAttribute('data-category') === category) {
+          post.style.display = 'block';
+        } else {
+          post.style.display = 'none';
+        }
+      });
+    });
+  });
+});
+</script>

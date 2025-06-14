@@ -1,0 +1,244 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Hero from '../components/Hero.astro';
+import DonationBanner from '../components/DonationBanner.astro';
+---
+
+<Layout title="Maxsys International - Community Tech Solutions">
+  <Header />
+  <main>
+    <Hero />
+    
+    <!-- Problem Statement -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+            The Problem Nobody's Talking About
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Technology is everywhere, everyone needs it, but getting decent help feels impossible.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-red-50 p-8 rounded-2xl">
+            <div class="w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5l-6.928-12c-.77-.833-2.694-.833-3.464 0l-6.928 12c-.77.833.192 2.5 1.732 2.5z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">Cybercrime Crisis</h3>
+            <p class="text-gray-600">Cybercriminals stole <strong>$16.6 billion</strong> last year, with seniors losing <strong>$4.8 billion</strong> to online scams alone.</p>
+          </div>
+
+          <div class="bg-yellow-50 p-8 rounded-2xl">
+            <div class="w-12 h-12 bg-yellow-500 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">E-Waste Crisis</h3>
+            <p class="text-gray-600">We generate <strong>6.9 million tons</strong> of electronic waste annually, while communities lack basic tech support.</p>
+          </div>
+
+          <div class="bg-blue-50 p-8 rounded-2xl">
+            <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">Talent Underutilized</h3>
+            <p class="text-gray-600">Thousands of skilled IT professionals are unemployed after tech layoffs, while communities desperately need tech help.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solution -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div>
+            <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+              Enter Maxsys: Fixing Tech the Right Way
+            </h2>
+            <p class="text-lg text-gray-600 mb-6">
+              What if we told you there's a better way? Not another Silicon Valley app or remote support service that puts you on hold for three hours. We're talking about real people, in your community, who actually care about solving your problems.
+            </p>
+            <p class="text-lg text-gray-600 mb-8">
+              Maxsys is building a network of local Tech Hubs—think of them as community IT departments that don't suck. Each hub is run by vetted professionals and staffed by skilled "Tech Stewards" who live in your area and believe giving back is beautiful.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a 
+                href="/how-it-works" 
+                class="bg-primary-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors duration-200 text-center"
+              >
+                Learn How It Works
+              </a>
+              <a 
+                href="/talent" 
+                class="bg-white text-primary-600 border-2 border-primary-600 px-8 py-3 rounded-lg font-semibold hover:bg-primary-50 transition-colors duration-200 text-center"
+              >
+                Browse Local Talent
+              </a>
+            </div>
+          </div>
+          <div class="relative">
+            <img 
+              src="https://images.pexels.com/photos/3184317/pexels-photo-3184317.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop"
+              alt="Local tech support helping community members"
+              class="rounded-2xl shadow-xl"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Impact Numbers -->
+    <section class="py-20 bg-primary-600 text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl lg:text-4xl font-bold mb-6">The Numbers Don't Lie</h2>
+          <p class="text-xl text-primary-100 max-w-3xl mx-auto">
+            Local tech support creates real economic impact while building stronger communities.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="text-center">
+            <div class="text-4xl font-bold mb-2">20-40%</div>
+            <div class="text-primary-200">Cost savings vs remote services</div>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl font-bold mb-2">$1.68</div>
+            <div class="text-primary-200">Economic multiplier per dollar spent locally</div>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl font-bold mb-2">$25-75</div>
+            <div class="text-primary-200">Hourly earnings for Tech Stewards</div>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl font-bold mb-2">$62B</div>
+            <div class="text-primary-200">Value recoverable from proper e-waste recycling</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Opportunities -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+            Featured Local Opportunities
+          </h2>
+          <p class="text-xl text-gray-600">
+            Real tech needs from your community, waiting for skilled professionals like you.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- These would be populated via API -->
+          <div class="bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg transition-shadow duration-200">
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-secondary-100 text-secondary-800 px-3 py-1 rounded-full text-sm font-medium">Network Security</span>
+              <span class="text-gray-500 text-sm">2 days ago</span>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-900 mb-2">Community Center Network Setup</h3>
+            <p class="text-gray-600 text-sm mb-4">Local community center needs secure WiFi network for 200+ daily visitors...</p>
+            <div class="flex items-center justify-between">
+              <span class="text-primary-600 font-semibold">$45-60/hr</span>
+              <span class="text-gray-500 text-sm">📍 Downtown Area</span>
+            </div>
+          </div>
+
+          <div class="bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg transition-shadow duration-200">
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-accent-100 text-accent-800 px-3 py-1 rounded-full text-sm font-medium">Web Development</span>
+              <span class="text-gray-500 text-sm">1 week ago</span>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-900 mb-2">Nonprofit Website Redesign</h3>
+            <p class="text-gray-600 text-sm mb-4">Animal shelter needs modern, mobile-friendly website with donation integration...</p>
+            <div class="flex items-center justify-between">
+              <span class="text-primary-600 font-semibold">$35-50/hr</span>
+              <span class="text-gray-500 text-sm">📍 Northside</span>
+            </div>
+          </div>
+
+          <div class="bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg transition-shadow duration-200">
+            <div class="flex items-center justify-between mb-4">
+              <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-medium">Data Recovery</span>
+              <span class="text-gray-500 text-sm">3 hours ago</span>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-900 mb-2">Church Database Recovery</h3>
+            <p class="text-gray-600 text-sm mb-4">URGENT: Church member database corrupted, need immediate recovery assistance...</p>
+            <div class="flex items-center justify-between">
+              <span class="text-primary-600 font-semibold">$50-75/hr</span>
+              <span class="text-gray-500 text-sm">📍 Westside</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-12">
+          <a 
+            href="/talent" 
+            class="bg-primary-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary-700 transition-colors duration-200 inline-block"
+          >
+            View All Opportunities
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-primary-600 to-secondary-600 text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl lg:text-4xl font-bold mb-6">Ready to Plug In?</h2>
+        <p class="text-xl text-primary-100 max-w-3xl mx-auto mb-12">
+          Whether you're a community looking for better tech support, a skilled professional seeking meaningful work, 
+          or an organization wanting to partner with something that actually makes sense, there's a place for you in this network.
+        </p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <div class="bg-white/10 backdrop-blur-sm p-8 rounded-2xl">
+            <svg class="w-12 h-12 text-primary-200 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0V6a2 2 0 012 2v6a2 2 0 01-2 2H8a2 2 0 01-2-2V8a2 2 0 012-2V6"></path>
+            </svg>
+            <h3 class="text-xl font-semibold mb-3">For Communities</h3>
+            <p class="text-primary-100 mb-6">Get reliable, local tech support that actually understands your needs.</p>
+            <a href="https://hub.maxsys.org" class="bg-white text-primary-600 px-6 py-2 rounded-lg font-semibold hover:bg-primary-50 transition-colors duration-200">
+              Post Your Tech Need
+            </a>
+          </div>
+
+          <div class="bg-white/10 backdrop-blur-sm p-8 rounded-2xl">
+            <svg class="w-12 h-12 text-primary-200 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+            </svg>
+            <h3 class="text-xl font-semibold mb-3">For Tech Professionals</h3>
+            <p class="text-primary-100 mb-6">Use your skills to make a real difference in your community while earning fair wages.</p>
+            <a href="/talent" class="bg-white text-primary-600 px-6 py-2 rounded-lg font-semibold hover:bg-primary-50 transition-colors duration-200">
+              Join as Tech Steward
+            </a>
+          </div>
+
+          <div class="bg-white/10 backdrop-blur-sm p-8 rounded-2xl">
+            <svg class="w-12 h-12 text-primary-200 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+            </svg>
+            <h3 class="text-xl font-semibold mb-3">For Supporters</h3>
+            <p class="text-primary-100 mb-6">Help us build technology infrastructure that strengthens communities.</p>
+            <a href="/donate" class="bg-white text-primary-600 px-6 py-2 rounded-lg font-semibold hover:bg-primary-50 transition-colors duration-200">
+              Support Our Mission
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+  <DonationBanner />
+</Layout>

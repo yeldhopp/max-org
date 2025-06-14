@@ -1,0 +1,408 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Donate - Support Community Tech Infrastructure" description="Help us build technology infrastructure that strengthens communities. Your donation creates local jobs and supports nonprofits with essential tech services.">
+  <Header />
+  <main>
+    <!-- Hero Section -->
+    <section class="py-20 bg-gradient-to-br from-primary-50 to-secondary-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
+          Support <span class="text-primary-600">Community Tech Infrastructure</span>
+        </h1>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+          Your donation helps build technology infrastructure that strengthens communities, creates local jobs, 
+          and ensures nonprofits have access to essential tech services.
+        </p>
+        <div class="bg-white rounded-2xl shadow-lg p-8 max-w-2xl mx-auto">
+          <h2 class="text-2xl font-bold text-gray-900 mb-6">Make a Donation</h2>
+          
+          <!-- Donation Amount Selection -->
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+            <button class="donation-amount bg-gray-100 hover:bg-primary-50 hover:text-primary-600 border-2 border-transparent hover:border-primary-600 px-4 py-3 rounded-lg font-semibold transition-colors duration-200" data-amount="25">
+              $25
+            </button>
+            <button class="donation-amount bg-gray-100 hover:bg-primary-50 hover:text-primary-600 border-2 border-transparent hover:border-primary-600 px-4 py-3 rounded-lg font-semibold transition-colors duration-200" data-amount="50">
+              $50
+            </button>
+            <button class="donation-amount bg-gray-100 hover:bg-primary-50 hover:text-primary-600 border-2 border-transparent hover:border-primary-600 px-4 py-3 rounded-lg font-semibold transition-colors duration-200" data-amount="100">
+              $100
+            </button>
+            <button class="donation-amount bg-gray-100 hover:bg-primary-50 hover:text-primary-600 border-2 border-transparent hover:border-primary-600 px-4 py-3 rounded-lg font-semibold transition-colors duration-200" data-amount="250">
+              $250
+            </button>
+          </div>
+          
+          <div class="mb-6">
+            <label for="custom-amount" class="block text-sm font-medium text-gray-700 mb-2">Or enter custom amount</label>
+            <div class="relative">
+              <span class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500">$</span>
+              <input 
+                type="number" 
+                id="custom-amount" 
+                placeholder="0.00"
+                class="w-full pl-8 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+              />
+            </div>
+          </div>
+          
+          <!-- Donation Type -->
+          <div class="mb-6">
+            <div class="flex space-x-4">
+              <label class="flex items-center">
+                <input type="radio" name="donation-type" value="one-time" checked class="text-primary-600 focus:ring-primary-500">
+                <span class="ml-2 text-gray-700">One-time donation</span>
+              </label>
+              <label class="flex items-center">
+                <input type="radio" name="donation-type" value="monthly" class="text-primary-600 focus:ring-primary-500">
+                <span class="ml-2 text-gray-700">Monthly recurring</span>
+              </label>
+            </div>
+          </div>
+          
+          <button class="w-full bg-primary-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary-700 transition-colors duration-200">
+            Donate Now
+          </button>
+          
+          <p class="text-xs text-gray-500 mt-4 text-center">
+            Secure donation processing powered by Stripe. Your information is protected and encrypted.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Impact of Donations -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">Your Impact</h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Every dollar donated creates multiplied impact through local economic development and community strengthening.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-primary-50 p-8 rounded-2xl text-center">
+            <div class="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">$25 Donation</h3>
+            <ul class="text-gray-600 space-y-2 text-sm">
+              <li>• Provides 1 hour of subsidized tech support for a nonprofit</li>
+              <li>• Supports background check for 1 new Tech Steward</li>
+              <li>• Funds cybersecurity training for 5 seniors</li>
+            </ul>
+          </div>
+
+          <div class="bg-secondary-50 p-8 rounded-2xl text-center">
+            <div class="w-16 h-16 bg-secondary-600 rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">$100 Donation</h3>
+            <ul class="text-gray-600 space-y-2 text-sm">
+              <li>• Funds complete website setup for a small nonprofit</li>
+              <li>• Supports training for 2 new Tech Stewards</li>
+              <li>• Provides emergency data recovery for a community organization</li>
+            </ul>
+          </div>
+
+          <div class="bg-accent-50 p-8 rounded-2xl text-center">
+            <div class="w-16 h-16 bg-accent-600 rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">$250 Donation</h3>
+            <ul class="text-gray-600 space-y-2 text-sm">
+              <li>• Helps establish a new Tech Hub in an underserved community</li>
+              <li>• Funds comprehensive cybersecurity audit for a nonprofit</li>
+              <li>• Supports 10 hours of subsidized tech training</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Donate -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div>
+            <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">Why Your Support Matters</h2>
+            <div class="space-y-6">
+              <div class="flex items-start space-x-4">
+                <div class="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                  <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-gray-900 mb-2">Bridge the Digital Divide</h3>
+                  <p class="text-gray-600">Many nonprofits and community organizations lack access to affordable, reliable tech support. Your donation helps bridge this gap.</p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-4">
+                <div class="w-8 h-8 bg-secondary-600 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                  <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-gray-900 mb-2">Create Local Jobs</h3>
+                  <p class="text-gray-600">Every donation helps create sustainable employment for skilled tech professionals in communities across the country.</p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-4">
+                <div class="w-8 h-8 bg-accent-600 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                  <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-gray-900 mb-2">Protect Vulnerable Populations</h3>
+                  <p class="text-gray-600">Your support funds cybersecurity training and protection services for seniors and other vulnerable community members.</p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-4">
+                <div class="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                  <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-gray-900 mb-2">Build Sustainable Communities</h3>
+                  <p class="text-gray-600">Local tech infrastructure creates resilient communities that can adapt and thrive in our digital economy.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img 
+              src="https://images.pexels.com/photos/6646971/pexels-photo-6646971.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop"
+              alt="Community impact of donations"
+              class="rounded-2xl shadow-lg"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Corporate Partnerships -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">Corporate Partnerships</h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Partner with us to make a larger impact while demonstrating your commitment to community development and digital equity.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-primary-50 p-8 rounded-2xl text-center">
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">Community Sponsor</h3>
+            <div class="text-3xl font-bold text-primary-600 mb-4">$2,500</div>
+            <ul class="text-gray-600 space-y-2 text-sm mb-6">
+              <li>• Sponsor a complete Tech Hub setup</li>
+              <li>• Logo on partner website</li>
+              <li>• Quarterly impact reports</li>
+              <li>• Employee volunteer opportunities</li>
+            </ul>
+            <button class="w-full bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors duration-200">
+              Become a Sponsor
+            </button>
+          </div>
+
+          <div class="bg-secondary-50 p-8 rounded-2xl text-center border-2 border-secondary-600">
+            <div class="bg-secondary-600 text-white px-3 py-1 rounded-full text-xs font-semibold mb-4 inline-block">
+              MOST POPULAR
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">Regional Partner</h3>
+            <div class="text-3xl font-bold text-secondary-600 mb-4">$10,000</div>
+            <ul class="text-gray-600 space-y-2 text-sm mb-6">
+              <li>• Support multiple Tech Hubs in a region</li>
+              <li>• Featured partner recognition</li>
+              <li>• Custom impact dashboard</li>
+              <li>• Speaking opportunities at events</li>
+              <li>• CSR content and case studies</li>
+            </ul>
+            <button class="w-full bg-secondary-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-secondary-700 transition-colors duration-200">
+              Partner With Us
+            </button>
+          </div>
+
+          <div class="bg-accent-50 p-8 rounded-2xl text-center">
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">National Champion</h3>
+            <div class="text-3xl font-bold text-accent-600 mb-4">$25,000+</div>
+            <ul class="text-gray-600 space-y-2 text-sm mb-6">
+              <li>• National brand association</li>
+              <li>• Executive advisory board seat</li>
+              <li>• Custom partnership programs</li>
+              <li>• National media opportunities</li>
+              <li>• Dedicated account management</li>
+            </ul>
+            <button class="w-full bg-accent-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-accent-700 transition-colors duration-200">
+              Contact Us
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Transparency -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">Financial Transparency</h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            We believe in complete transparency about how your donations are used to create community impact.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-lg p-8">
+          <h3 class="text-xl font-semibold text-gray-900 mb-6 text-center">How Your Donations Are Used</h3>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="text-center">
+              <div class="w-20 h-20 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span class="text-white text-2xl font-bold">65%</span>
+              </div>
+              <h4 class="font-semibold text-gray-900 mb-2">Direct Services</h4>
+              <p class="text-gray-600 text-sm">Subsidized tech support for nonprofits, training programs, and community services</p>
+            </div>
+            
+            <div class="text-center">
+              <div class="w-20 h-20 bg-secondary-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span class="text-white text-2xl font-bold">20%</span>
+              </div>
+              <h4 class="font-semibold text-gray-900 mb-2">Hub Development</h4>
+              <p class="text-gray-600 text-sm">Establishing new Tech Hubs, training partners, and expanding to new communities</p>
+            </div>
+            
+            <div class="text-center">
+              <div class="w-20 h-20 bg-accent-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span class="text-white text-2xl font-bold">10%</span>
+              </div>
+              <h4 class="font-semibold text-gray-900 mb-2">Platform & Technology</h4>
+              <p class="text-gray-600 text-sm">Maintaining and improving our platform, security, and technology infrastructure</p>
+            </div>
+            
+            <div class="text-center">
+              <div class="w-20 h-20 bg-gray-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span class="text-white text-2xl font-bold">5%</span>
+              </div>
+              <h4 class="font-semibold text-gray-900 mb-2">Administration</h4>
+              <p class="text-gray-600 text-sm">Essential operational costs, compliance, and organizational management</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Other Ways to Help -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">Other Ways to Support Our Mission</h2>
+          <p class="text-xl text-gray-600">
+            Financial donations aren't the only way to help build stronger community tech infrastructure.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="text-center p-6">
+            <div class="w-16 h-16 bg-primary-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">Spread the Word</h3>
+            <p class="text-gray-600 mb-4">
+              Share our mission with nonprofits, community organizations, and skilled tech professionals in your network.
+            </p>
+            <a href="/contact" class="text-primary-600 font-semibold hover:text-primary-700 transition-colors duration-200">
+              Get Sharing Resources →
+            </a>
+          </div>
+
+          <div class="text-center p-6">
+            <div class="w-16 h-16 bg-secondary-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0V6a2 2 0 012 2v6a2 2 0 01-2 2H8a2 2 0 01-2-2V8a2 2 0 012-2V6"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">Volunteer Your Skills</h3>
+            <p class="text-gray-600 mb-4">
+              Join as a Tech Steward or help with training, marketing, community outreach, and other essential functions.
+            </p>
+            <a href="/talent" class="text-secondary-600 font-semibold hover:text-secondary-700 transition-colors duration-200">
+              Explore Volunteer Opportunities →
+            </a>
+          </div>
+
+          <div class="text-center p-6">
+            <div class="w-16 h-16 bg-accent-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">Partner With Us</h3>
+            <p class="text-gray-600 mb-4">
+              Become a Tech Hub partner in your community or explore corporate partnership opportunities.
+            </p>
+            <a href="/partners" class="text-accent-600 font-semibold hover:text-accent-700 transition-colors duration-200">
+              Learn About Partnerships →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const donationButtons = document.querySelectorAll('.donation-amount');
+  const customAmountInput = document.getElementById('custom-amount');
+  
+  donationButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const amount = this.getAttribute('data-amount');
+      
+      // Remove active state from all buttons
+      donationButtons.forEach(btn => {
+        btn.classList.remove('bg-primary-50', 'text-primary-600', 'border-primary-600');
+        btn.classList.add('bg-gray-100');
+      });
+      
+      // Add active state to clicked button
+      this.classList.add('bg-primary-50', 'text-primary-600', 'border-primary-600');
+      this.classList.remove('bg-gray-100');
+      
+      // Clear custom amount
+      if (customAmountInput) {
+        customAmountInput.value = '';
+      }
+      
+      console.log('Selected donation amount:', amount);
+    });
+  });
+  
+  // Clear button selection when custom amount is entered
+  if (customAmountInput) {
+    customAmountInput.addEventListener('input', function() {
+      donationButtons.forEach(btn => {
+        btn.classList.remove('bg-primary-50', 'text-primary-600', 'border-primary-600');
+        btn.classList.add('bg-gray-100');
+      });
+    });
+  }
+});
+</script>

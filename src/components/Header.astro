@@ -1,0 +1,98 @@
+---
+const navItems = [
+  { name: 'Home', href: '/' },
+  { name: 'Talent', href: '/talent' },
+  { name: 'How It Works', href: '/how-it-works' },
+  { name: 'Partners', href: '/partners' },
+  { name: 'About', href: '/about' },
+  { name: 'Contact', href: '/contact' }
+];
+---
+
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <!-- Logo -->
+      <div class="flex-shrink-0">
+        <a href="/" class="flex items-center">
+          <div class="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center">
+            <span class="text-white font-bold text-lg">M</span>
+          </div>
+          <span class="ml-2 text-xl font-semibold text-gray-900">Maxsys</span>
+        </a>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden md:block">
+        <div class="ml-10 flex items-baseline space-x-8">
+          {navItems.map((item) => (
+            <a 
+              href={item.href} 
+              class="text-gray-700 hover:text-primary-600 px-3 py-2 text-sm font-medium transition-colors duration-200"
+            >
+              {item.name}
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <!-- CTA Button -->
+      <div class="hidden md:block">
+        <a 
+          href="/donate" 
+          class="bg-primary-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-primary-700 transition-colors duration-200"
+        >
+          Donate Now
+        </a>
+      </div>
+
+      <!-- Mobile menu button -->
+      <div class="md:hidden">
+        <button 
+          type="button" 
+          class="mobile-menu-button bg-gray-100 inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-primary-600 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500"
+          aria-controls="mobile-menu" 
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu hidden md:hidden">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
+        {navItems.map((item) => (
+          <a 
+            href={item.href} 
+            class="text-gray-700 hover:text-primary-600 block px-3 py-2 text-base font-medium"
+          >
+            {item.name}
+          </a>
+        ))}
+        <a 
+          href="/donate" 
+          class="bg-primary-600 text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-primary-700 mt-4"
+        >
+          Donate Now
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const button = document.querySelector('.mobile-menu-button');
+  const menu = document.querySelector('.mobile-menu');
+  
+  if (button && menu) {
+    button.addEventListener('click', function() {
+      menu.classList.toggle('hidden');
+    });
+  }
+});
+</script>
