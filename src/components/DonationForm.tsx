@@ -6,6 +6,7 @@ import {
   useStripe,
   useElements
 } from '@stripe/react-stripe-js';
+import ErrorBoundary from './ErrorBoundary';
 
 // Initialize Stripe
 const stripePromise = loadStripe(import.meta.env.PUBLIC_STRIPE_PUBLISHABLE_KEY || '');
@@ -233,11 +234,13 @@ const DonationForm: React.FC = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto">
-      <Elements stripe={stripePromise} options={options}>
-        <DonationFormContent />
-      </Elements>
-    </div>
+    <ErrorBoundary>
+      <div className="max-w-md mx-auto">
+        <Elements stripe={stripePromise} options={options}>
+          <DonationFormContent />
+        </Elements>
+      </div>
+    </ErrorBoundary>
   );
 };
 
