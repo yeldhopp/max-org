@@ -1,8 +1,10 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
+import react from '@astrojs/react';
 
 export default defineConfig({
-  integrations: [tailwind()],
-  site: 'https://maxsys.org'
+  integrations: [tailwind(), react()],
+  site: 'https://maxsys.org',
+  output: 'hybrid'
 });
